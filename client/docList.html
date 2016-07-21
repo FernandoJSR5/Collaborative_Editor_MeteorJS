@@ -1,0 +1,17 @@
+<template name="docList">
+	<div class="container-fluid">
+		<h1 class="text-muted">All Documents</h1>
+		<br>
+		<div class="row">
+			{{#each documents}}
+			<div class="col-md-offset-1 col-md-3 col-xs-6">
+					<a href="/documents/{{_id}}">
+						<span class="fa fa-file-text-o fa-5x" aria-hidden="true"></span>
+						<p class="lead">{{title}}</p>
+					</a>
+					<br>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+</template>
